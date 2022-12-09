@@ -25,7 +25,7 @@ const Footer = () => {
             Begench Shamiyev
           </div>
           <p className='text-paragraph opacity-80 text-[15px]'>
-            &copy; 2022 Cristian Mihai. All rights reserved.
+            Student num: 2110809638
           </p>
         </div>
       </div>
