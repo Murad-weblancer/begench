@@ -23,10 +23,8 @@ const About = () => {
               </p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
-                earum dolorum quo consequatur rem nihil hic ducimus rerum soluta
-                neque harum velit molestiae dignissimos distinctio dolorum nisi
-                labore culpa nihil. <br />
+              I am 25 years old from Turkmenistan. Now I study mekatronik enginering in the Karabuk university. My student number is 2110809638
+              <br />
                 <br />
               </p>
             </div>
