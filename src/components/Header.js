@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 // import components
-import Logo from '../assets/img/logo.svg';
-import Nav from '../components/Nav';
-import NavMobile from '../components/NavMobile';
-import Socials from './Socials';
+import Logo from "../assets/img/logo.svg";
+import Nav from "../components/Nav";
+import NavMobile from "../components/NavMobile";
+import Socials from "./Socials";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
@@ -18,24 +19,22 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-tertiary h-20' : 'h-24'
-      } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
+        bg ? "bg-tertiary h-20" : "h-24"
+      } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300 bg-black`}
     >
-      <div className='container mx-auto h-full flex items-center justify-between'>
+      <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
-        <a href='#'>
-          Begench Shamiyev
-        </a>
+        <Link to={'/'}>Begench Shamiyev</Link>
         {/* nav */}
-        <div className='hidden lg:block'>
+        <div className="hidden lg:block">
           <Nav />
         </div>
         {/* Socials */}
-        <div className='hidden lg:block'>
+        <div className="hidden lg:block">
           <Socials />
         </div>
         {/* nav mobile*/}
-        <div className='lg:hidden'>
+        <div className="lg:hidden">
           <NavMobile />
         </div>
       </div>
