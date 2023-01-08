@@ -7,9 +7,7 @@ import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 import Services from "./Services";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import Testimonials from "./Testimonials";
-import BackTopBtn from "./BackTopBtn";
 export const Home = () => {
   return (
     <>
@@ -21,8 +19,7 @@ export const Home = () => {
       <Services />
       <Testimonials />
       <Contact />
-      <Footer />
-      <BackTopBtn />
+
     </>
   );
 };

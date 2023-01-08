@@ -7,6 +7,7 @@ export const NavTOHome = () => {
       <li className="text-white hover:text-accent cursor-pointer">
         {" "}
         <Link to="homework">Final homework</Link>{" "}
+        <Link to="last">Final 3 homework</Link>{" "}
       </li>
     </div>
   );
